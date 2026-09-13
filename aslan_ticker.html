@@ -25,10 +25,10 @@ html,body{
 /* ---------- TOP BRAND PANEL ---------- */
 .brand-panel{
   position:absolute;
-  left:10.5%;
-  right:10.5%;
-  top:20.2%;
-  height:7.6%;
+  left:8.5%;
+  right:8.5%;
+  top:18.8%;
+  height:10.0%;
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -39,53 +39,71 @@ html,body{
 
 .brand-title{
   white-space:nowrap;
-  line-height:.88;
+  line-height:.86;
   animation:brandPulse 2.4s ease-in-out infinite alternate;
+  filter:drop-shadow(0 0 10px rgba(255,158,44,.18));
 }
 
 .aslan{
   font-family:Georgia,"Times New Roman",serif;
   font-weight:900;
-  font-size:clamp(26px,6.6vw,72px);
-  letter-spacing:.025em;
-  background:linear-gradient(180deg,#fff7cc 0%,#ffe083 16%,#ffc447 35%,#a44e0e 60%,#f8c55d 80%,#fff0a4 100%);
+  font-size:clamp(34px,8vw,92px);
+  letter-spacing:.02em;
+  background:linear-gradient(180deg,#fffce0 0%,#fff0aa 12%,#ffd86a 30%,#ffbb36 47%,#a94f0d 64%,#ffcb58 82%,#fff4b8 100%);
   -webkit-background-clip:text;
   background-clip:text;
   color:transparent;
-  -webkit-text-stroke:1px rgba(70,20,1,.98);
-  filter:drop-shadow(0 2px 0 #5b1902) drop-shadow(0 5px 5px rgba(0,0,0,.78));
+  -webkit-text-stroke:1.2px rgba(78,27,2,.98);
+  text-shadow:
+    0 1px 0 rgba(255,240,180,.35),
+    0 3px 0 rgba(108,38,4,.9),
+    0 8px 10px rgba(0,0,0,.85),
+    0 0 12px rgba(255,174,55,.42),
+    0 0 24px rgba(255,96,18,.20);
+  filter:drop-shadow(0 3px 0 #6d2503) drop-shadow(0 6px 10px rgba(0,0,0,.8));
 }
 
 .cross{
-  color:#ff6544;
-  font-size:clamp(19px,4vw,44px);
+  color:#ffb545;
+  font-size:clamp(24px,4.8vw,54px);
   font-weight:1000;
-  padding:0 .10em;
-  text-shadow:0 0 11px rgba(255,77,36,.72);
+  padding:0 .12em;
+  text-shadow:
+    0 2px 0 rgba(102,38,3,.9),
+    0 0 10px rgba(255,177,67,.65),
+    0 0 18px rgba(255,88,22,.30);
 }
 
 .wnk{
-  font-family:Impact,"Arial Black",Arial,sans-serif;
+  font-family:Georgia,"Times New Roman",serif;
   font-style:italic;
-  font-weight:1000;
-  font-size:clamp(25px,6vw,66px);
+  font-weight:900;
+  font-size:clamp(32px,7.6vw,84px);
   letter-spacing:.03em;
-  background:linear-gradient(180deg,#ffe2d9 0%,#ff9a80 22%,#ff4f3a 48%,#8d100d 70%,#ffb39f 100%);
+  background:linear-gradient(180deg,#fffce0 0%,#fff0aa 12%,#ffd86a 30%,#ffbb36 47%,#a94f0d 64%,#ffcb58 82%,#fff4b8 100%);
   -webkit-background-clip:text;
   background-clip:text;
   color:transparent;
-  -webkit-text-stroke:1px rgba(65,0,0,.98);
-  filter:drop-shadow(0 2px 0 #650606) drop-shadow(0 5px 5px rgba(0,0,0,.78));
+  -webkit-text-stroke:1.2px rgba(78,27,2,.98);
+  text-shadow:
+    0 1px 0 rgba(255,240,180,.35),
+    0 3px 0 rgba(108,38,4,.9),
+    0 8px 10px rgba(0,0,0,.85),
+    0 0 12px rgba(255,174,55,.42),
+    0 0 24px rgba(255,96,18,.20);
+  filter:drop-shadow(0 3px 0 #6d2503) drop-shadow(0 6px 10px rgba(0,0,0,.8));
 }
 
 .brand-sub{
-  margin-top:1.2%;
-  color:#fff2d6;
-  font-size:clamp(8px,1.5vw,16px);
+  margin-top:1.8%;
+  color:#fff3d6;
+  font-size:clamp(9px,1.65vw,18px);
   font-weight:1000;
-  letter-spacing:.28em;
+  letter-spacing:.22em;
   text-transform:uppercase;
-  text-shadow:0 2px 3px #000,0 0 8px rgba(255,181,54,.32);
+  text-shadow:
+    0 2px 3px #000,
+    0 0 8px rgba(255,181,54,.32);
 }
 
 /* ---------- NARROW ROTATING STRIP ---------- */
@@ -349,8 +367,8 @@ html,body{
 }
 
 @keyframes brandPulse{
-  from{transform:scale(.99);filter:brightness(.95)}
-  to{transform:scale(1.015);filter:brightness(1.08)}
+  from{transform:scale(.985);filter:brightness(.96)}
+  to{transform:scale(1.02);filter:brightness(1.10)}
 }
 
 @keyframes ribbonCycle{
